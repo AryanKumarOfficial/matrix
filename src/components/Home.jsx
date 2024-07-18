@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Matrix from "./Matrix";
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "Home | Color Matrix"
+    }, [])
     return (
         <>
             <div className="App">

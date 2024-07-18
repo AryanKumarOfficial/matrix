@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 import ("../styles/about.css");
 
 const About = () => {
+    useEffect(() => {
+        document.title = "About | Color Matrix"
+    }, [])
     return (<section className="about">
         <h1>About This App</h1>
         <p>This React application demonstrates an interactive 3x3 matrix where users can click on each box to change

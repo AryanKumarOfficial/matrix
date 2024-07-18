@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "../styles/contact.css";
 import toast from "react-hot-toast";
 
@@ -6,6 +6,10 @@ const Contact = () => {
     const [formData, setFormData] = useState({
         name: "", email: "", message: ""
     });
+
+    useEffect(() => {
+        document.title = "Contact | Color Matrix"
+    }, [])
 
     const handleChange = (e) => {
         const {name, value} = e.target;
