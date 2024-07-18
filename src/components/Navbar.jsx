@@ -8,20 +8,22 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
-    const links = [{
-        name: "home",
-        link: "/"
-    }, {
-        name: "about",
-        link: "/about"
-    },
+    const links = [
         {
-            name: "services",
-            link: "/services"
+            name: "home",
+            link: "/"
         },
+        // {
+        //     name: "about",
+        //     link: "/about"
+        // },
+        // {
+        //     name: "services",
+        //     link: "/services"
+        // },
         {
-            name: "contact",
-            link: "/contact"
+            name: "contacts",
+            link: "/contacts"
         }
     ]
 
